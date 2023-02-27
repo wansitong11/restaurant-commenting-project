@@ -2,6 +2,7 @@ package com.restaurant_commenting.service.impl;
 
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.bean.copier.CopyOptions;
+import cn.hutool.core.lang.UUID;
 import cn.hutool.core.util.RandomUtil;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.restaurant_commenting.dto.LoginFormDTO;
@@ -26,6 +27,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
+
+import static com.restaurant_commenting.utils.RedisConstants.*;
 
 import static com.restaurant_commenting.utils.SystemConstants.USER_NICK_NAME_PREFIX;
 

@@ -49,6 +49,9 @@ public class Blog implements Serializable {
      */
     private String title;
 
+    @TableField(exist = false)
+    private Boolean isLike;
+
     /**
      * 探店的照片，最多9张，多张以","隔开
      */
